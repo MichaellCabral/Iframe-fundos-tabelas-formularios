@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cao 19 aula 07 Centralização vertical de caixas</title>
+    <style>
+        .negrito{
+            font-weight:  bold;
+        }
+        #container {
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            background-color: purple;
+            padding: 10px;
+
+
+        }
+
+        #conteudo {
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            background-color: yellow;
+            width: 400px;
+            padding: 10px;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%,-50%);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Alinhamento vertical</h1>
+    <section id="container">
+        <p>section</p>
+        <article id="conteudo">
+            <p>article</p>
+            <p>Pra deixar o conteudo em cx menor se usa o <span class="negrito">width: 400px</span> e centraliza ele com a <span class="negrito">margin: auto</span></p>
+            <p>Vamos alinhar verticalmente, porém o margin não faz isso e retiramos ele</p>
+            <p>Todo posicionamento de um box é relativo</p>
+            <p>Transform: -50%,-50%. transforma a posição dp box e o mantem alinhado sempre no meio da section</p>
+            <p>left e top mantem 50% pra baixo e 50% pra direita</p>
+            <h2>Desta forma se centraliza um elemento verticalmente na tela</h2>
+
+        </article>
+    </section>
+    
+</body>
+</html>
