@@ -57,6 +57,9 @@ section {/*configuração para qualquer section*/
     font-family: var(--fonte3);
     font-size: 3.5vw; /*poderia usar o media query >> se usa o vw (viewport weidth "largura" para ajustar a largura da página) mobile ESTE RECURSO NÃO É A MELHOR MANEIRA*/
 }
+section > p{
+    padding-bottom: 10em;
+}
 
 section.normal{
     background-color: white;
@@ -72,7 +75,12 @@ section.imagem > p { /*caixa preta no paragrafo e fundo do texto*/
     display: inline-block; /*texto se adapta ao tamanho da caixa*/
     padding: 5px; /*ajusta as margens do texto na caixa do paragrafo*/ 
     background-color:rgba( 0, 0, 0, 0.253);
+}
+section#img01{
 
+}
+section#img02{
+    
 }
 
 footer {
