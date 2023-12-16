@@ -1,43 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iframe004</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        iframe#tela {
-            width: 95vw;
-            height: 400px;
-            border: 2px solid black;
-
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <h1>iframe com uma imagem</h1>
-    <p>Trabalhei com iframe neste conteúdo aonde posso escolher uma das minhas páginas abaixo<br> Informações no Código em Html</p>
-
-    <ul>
-        <li><a href="minhas_paginas/pagina_001.html" target="frame">Primeira Página</a></li>
-        <li><a href="minhas_paginas/pagina_002.html" target="frame">Segunda Página</a></li>
-        <li><a href="minhas_paginas/pagina_003.html" target="frame">Terceira Págna</a></li>
-        <!--Selecionei primeira pagina e vinculei a pagina dentro da minha pasta de arquivos-->
-    </ul>
-
-    <h2>O iframe é esta janela abaixo conhecido também como inlineframe (janela na linha de dentro) mesmo que atualmente se julga ultrapassado, podemos usá-lo de forma adequada pra visualização de tabelas e outros itens como no exemplo abaixo</h2>
-
-    <iframe id="tela" name="frame"  frameborder="0"
-    srcdoc="<h1>Selecione um dos itens acima</h1> <p>utilizando dentro da tag iframe o item srcdoc:&quot; &quot;, é possível utilizar as tags html dentro do iframe como agora que esta podendo ler esta mensagem dentro deste iframe003
-             <p>Inclui uma imagem com src img utilizando as aspas simples</p> 
-             <img src='imagens/icone.jpg'>"></iframe>
-    
-    <!--O id tela é opcional, porém o "name" é essencial pra fazer funcionar o vinculo das telas no iframe-->
-
-    <p>Por fim podemos estilizar o site</p>
-
+    <h1>Meu site principal</h1>
+    <p>Para bloquear as estruturas do site no iframe potencialmente maliciosas se usa a configuração no código em html chamado sandbox <br> No exemplo abaixo não se consegue cadastrar o usuário e o no referrerpolicy tambem da um nível de segurança a mais 
+    <br>allow-same-origin allow-scripts diz respeito ao formulario que estamos utlizando no iframe permitindo apenas cadastrar e colocando o restante do nivel de segurança.
+    </p>
+    <iframe src="minhas_paginas/pagina_004.html" frameborder="1" sandbox="allow-same-origin allow-scripts" noreferrerpolicy="no-referrer">
+    Seu navegador não é compatível    
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo commodi nostrum saepe maiores architecto quibusdam quisquam aperiam eaque? Aperiam, ex quasi! Cupiditate modi quam error obcaecati a perferendis quisquam odio?</p>
 </body>
-</html>
+</html> 
