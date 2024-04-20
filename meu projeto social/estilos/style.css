@@ -45,3 +45,28 @@ iframe#tela {
     width: 269px; /*largura da tela*/
     height: 471px; /*altura da tela*/
 }
+
+/*Colocando as logos que estão na vertical do lado esquerdo*/
+section#redes-sociais {
+    text-align: right;
+}
+
+
+/*Design dos botões*/
+section#redes-sociais img {
+    width: 50px; /*estilizando a largura a altura fica na porporção*/
+    margin: 10px; /*espaço entre os botões*/
+    border-radius: 50%; /*logo redonda*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    /*Logos estilizados na vertical - usei br no arquivo html*/
+    box-sizing: border-box; /*botões não se mexem*/
+
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.600);
+    transform: translate(-3px,-3px); /*botão se mexe*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.562);/*faz a sombra quando o botão se mexer*/
+    transition: transform 0.3s, border 0.5s; /*velocidade com que botão se mexe e a borda branca aparece*/
+}
+
