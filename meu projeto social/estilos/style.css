@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/*O asterisco generaliza as configurações gerais da página*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+/*configurações para o html e o body da página*/
+html , body {
+    height: 100vh;
+    width: 100vW;
+    background-color:black;
+}
+
+body {
+    background: url('../imagens/fundo-madeira.jpg') 
+    no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed; /*fixa o objeto na tela sem barra de rolagem*/
+}
+
+/*O main siginifica a tela principal da página*/
+main {
+    height: 100vh;
+    position: relative;
+}
+/*Abaixo as configurações para o telefone*/
+section#telefone{
+    position: absolute; /*centraliza o section na página*/
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%); /*centraliza a section no meio da tela*/
+
+    height: 627px;/*Usei a propriedade da imagem pra ver a altura e largura correta*/
+    width: 311px;
+    
+    background: url('../imagens/frame-iphone.png') no-repeat;/*usar dois pontos na url para voltar uma pasta*/
+}
+/*id do iframe tela*/
+iframe#tela {
+    position: relative;
+    top: 80px; /*cabeça da tela*/
+    left:22px; /*alinhamento a esquerda da tela*/
+    width: 269px; /*largura da tela*/
+    height: 471px; /*altura da tela*/
+}
