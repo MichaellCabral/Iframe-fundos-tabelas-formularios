@@ -42,7 +42,7 @@ iframe#tela {
     position: relative;
     top: 80px; /*cabeça da tela*/
     left:22px; /*alinhamento a esquerda da tela*/
-    width: 269px; /*largura da tela*/
+    width: 267px; /*largura da tela*/
     height: 471px; /*altura da tela*/
 }
 
