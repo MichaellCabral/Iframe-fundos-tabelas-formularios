@@ -7,10 +7,29 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form>
-        <!--Input crias as caixas de preenchimento dos formulários-->
-        <p>nome: <input type="text" name="nome" id="nome"></p>
-        <p>sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    
+    <!--
+        Não se faz site sem relacionar o label ao seu input
+        Sempre é necessário identificar o nome e o id (identificador)
+        para html e PHP o "name" se faz necessário e para javascript e uso do "label" o "id"
+        metodo get e post servem para proteger os dados:
+        get abaixo de 3000 bytes sem dados sensíveis e sem envio de arquivos
+        posr acima de 3000 bytes com dados sensiveis e envio de aruquivos
+    -->
+
+    <form action="cadastro.php" autocomplete="off" method="post"> <!--Desliga a sugestão do formulário-->
+        <!--
+            Input crias as caixas de preenchimento dos formulários
+            action relaciona para onde os dados serão enviados após envio do formulário
+        -->
+        <p> <!--Envelopar com abreviatura: segure ctrl+shift+p escolha: emmet with wrap abrevviation e digite label-->
+            <label for="inome">Nome:</label> <!--coloque o inome, pois será utilizado o id-->
+             <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
         <p><input type="submit" value="Enviar"></p>
     </form>
 </body>
