@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    </style>
+</head>
+<body>
+    <h1>Cores e envio de arquivos</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!--field setserve para criar caixa do formulario (organiza as partes)
+        legend coloca o titulo das caixas de formulario
+        value coloca u valor especifico ao iniciar formulario-->
+    <fieldset>
+        <legend>cores</legend>
+        <label for="icores">Cor</label>
+        <input type="color" name="cor" id="icor" value="">
+    </fieldset>
+
+    <fieldset>
+        <legend>Nivel de Satisfação</legend>
+        <label for="inivel">Nivel de Satisfação: </label>
+        <input type="range" name="nivel" id="inivel" value="5" min="1" max="5">
+    </fieldset>
+
+    <fieldset>
+        <!--Sempre usa method post devido a segurança do arquivo enviado-->
+            <legend>Envio de arquivo</legend>
+            <label for="ifotos">Foto do Perfil: </label>
+            <input type="file" name="foto" id="ifotos">
+        
+    </fieldset>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    </form>
+</body>
+</html>
