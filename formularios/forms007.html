@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Select Datalist e textarea</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+    <!--Todo formulário que usa o método get tem limite de 3000bytes pra enviar-->
+    <!--Método post não tem limites de bytes pra enviar-->
+        <p>
+            <label for="iestado">Estado</label>
+            <select name="estado" id="iestado">
+                
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                
+                
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Nordeste</option>
+                </optgroup>
+                
+            </select>
+        </p>
+<!--Adiferença entre select e data list é que o data list permite digitar itens no formulário-->
+        <p>
+            <label for="iprofessor">Profissão</label>
+            <input type="text" name="professor" id="iprofessor" list="listprofessor">
+            <datalist id="listprofessor">
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Geografia</option>
+            </datalist>
+
+        </p>
+            <label for="imensagem">Mensagem: </label>
+            <textarea name="mensagem" id="imensagem" cols="30" rows="10" placeholder="sua mensagem aqui"></textarea>
+        <p>
+
+        </p>
+
+
+    
+
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    </form>
+</body>
+</html>
