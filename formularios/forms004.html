@@ -9,7 +9,7 @@
     <h1>Formulário com email e Telefone</h1>
     
     <form action="cadastro.php" method="get" autocomplete="on">
-        <fieldset>
+        <fieldset> <!--cria uma caixa pra agrupar o formulário eda pra fazer um design em css-->
             <legend>Dados Pessoais</legend>
             <p>
                 <label for="inome">Nome</label>
@@ -24,7 +24,7 @@
                 <input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx">
                 <!--Estudar mais sobre RegEx (expressões regulares) dita regras pra entrada de telefone-->
                 <!--A validação fica melhor com javascript e PHP-->
-                <!--O fomrulario fieldset pode ser personalizado via css-->
+                <!--O formulario fieldset pode ser personalizado via css-->
             </p>
         </fieldset>
         <input type="submit" value="Enviar">
